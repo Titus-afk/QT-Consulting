@@ -34,7 +34,7 @@ export default function RootLayout() {
     <GluestackUIProvider mode="light">
       <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
         <Stack initialRouteName="index">
-          <Stack.Screen name="index" />
+          <Stack.Screen name="index" options={{ title: "Home", headerShown: false }} />
           <Stack.Screen name="+not-found" />
         </Stack>
         <StatusBar style="auto" />
